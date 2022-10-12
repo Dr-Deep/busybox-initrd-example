@@ -7,14 +7,14 @@ cd initrd
     chmod +x ./bin/busybox
 
     echo '#!/bin/busybox sh' > init
-    echo 'echo "---> WELCOME TO tripledoomers BUSYBOX! <---"' >> init
+    echo 'echo "---> WELCOME TO deepcracks BUSYBOX! <---"' >> init
     echo '/bin/busybox --install -s /bin' >> init
     echo '/bin/mount -t sysfs sysfs /sys' >> init
     echo '/bin/mount -t proc proc /proc' >> init
     echo '/bin/mount -t devtmpfs devtmpfs /dev' >> init
     echo '/bin/sysctl -w kernel.printk="2 4 1 7"' >> init
     echo '/bin/sh' >> init
-    echo 'echo "---> tripledoomers BUSYBOX IS SHUTTING DOWN! <---"' >> init
+    echo 'echo "---> deepcracks BUSYBOX IS SHUTTING DOWN! <---"' >> init
     echo '/bin/poweroff -f' >> init
 
     chmod -R 777 .
